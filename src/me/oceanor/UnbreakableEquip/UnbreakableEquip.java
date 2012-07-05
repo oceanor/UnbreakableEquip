@@ -11,13 +11,12 @@ public class UnbreakableEquip extends JavaPlugin
     public void onEnable() 
     {
         getServer().getPluginManager().registerEvents(new Listeners(), this);
-        logger.info("[OceUtility] enabled");
-	}
+        logger.info("[UnbreakableEquip] enabled");
+    }
 
     public void onDisable() 
     {
         this.getServer().getScheduler().cancelTasks(this);
-    	logger.info("[OceUtility] disabled");
+        logger.info("[UnbreakableEquip] disabled");
     }
-
 }
